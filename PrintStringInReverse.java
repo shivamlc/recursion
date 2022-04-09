@@ -3,18 +3,20 @@
 public class PrintStringInReverse {
 	
 	
-	
+	//printReverse function called 'n' times where n is length of string
 	static void printReverse(char[] s, int index)
 	{
 		if(index==-1)
 			return;
 		else {
+			//in each function call, SOP called 1 time (O(1))
 			System.out.println(s[index]);
 			index=index-1;
 			printReverse(s,index);
 		}
 	}
 	
+	//Time complexity of printReverse is n*O(1)=O(n)
 	
 	public static void main(String args[])
 	{
